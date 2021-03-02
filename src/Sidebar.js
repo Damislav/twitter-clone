@@ -23,13 +23,9 @@ const Sidebar = () => {
       <SidebarOption Icon={MailOutline} text="Mail" />
       <SidebarOption Icon={BookmarkBorder} text="Bookmarks" />
       <SidebarOption Icon={ListAlt} text="Lists" />
-      <SidebarOption Icon={PermIdentity} text="" />
+      <SidebarOption Icon={PermIdentity} text="Profile" />
       <SidebarOption Icon={MoreHoriz} text="More" />
 
-      {/* twitter icon */}
-      {/* sidebar option */}
-
-      {/* sidebar option */}
       <Button className="sidebar__tweet" fullWidth variant="outlined">
         Tweet
       </Button>

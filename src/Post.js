@@ -6,6 +6,7 @@ import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
+import { Delete } from "@material-ui/icons";
 
 const Post = forwardRef(
   ({ displayName, username, verified, text, image, avatar }, ref) => {
@@ -18,7 +19,7 @@ const Post = forwardRef(
           <div className="post__header">
             <div className="post__headerText">
               <h3>
-                {displayName}{" "}
+                {displayName}
                 <span className="post__headerSpecial">
                   {verified && <VerifiedUserIcon className="post__badge" />} @
                   {username}
@@ -34,7 +35,7 @@ const Post = forwardRef(
             <ChatBubbleOutlineIcon fontSize="small" />
             <RepeatIcon fontSize="small" />
             <FavoriteBorderIcon fontSize="small" />
-            <PublishIcon fontSize="small" />
+            <Delete fontSize="small" />
           </div>
         </div>
       </div>
