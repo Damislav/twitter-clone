@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./TweetBox.css";
 import { Avatar, Button, Tooltip } from "@material-ui/core";
-import db from "./firebase";
+import db from "../../firebase";
 import PermMediaIcon from "@material-ui/icons/PermMedia";
 import GifIcon from "@material-ui/icons/Gif";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";

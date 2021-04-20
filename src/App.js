@@ -1,13 +1,22 @@
 import "./App.css";
-import Sidebar from "./Sidebar";
-import Feed from "./Feed";
-import Widgets from "./Widgets";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Feed from "./components/Feed/Feed";
+import Widgets from "./components/Widget/Widgets";
+import { useStateValue } from "./StateProvider";
+import Login from "./components/Login/Login";
 function App() {
+  const [{ user }, dispatch] = useStateValue();
   return (
-    <div className="app">
-      <Sidebar />
-      <Feed />
-      <Widgets />
+    <div className="">
+      {!user ? (
+        <Login />
+      ) : (
+        <div className="app">
+          <Sidebar />
+          <Feed />
+          <Widgets />
+        </div>
+      )}
     </div>
   );
 }
